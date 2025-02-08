@@ -1,0 +1,341 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar container styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+/* Navbar background color on scroll */
+#navbar.scrolled {
+  background-color: #769656;
+}
+
+/* Navigation list styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Individual list item styling */
+ul li {
+  display: inline;
+  font-weight: 500;
+}
+
+/* Aligns first list item (logo) to the left */
+#nav-links li:first-child {
+  margin-right: auto;
+}
+
+/* Link styles for nav items */
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Hover and active state for nav links */
+ul li a:hover, ul li a.active {
+  background-color: #BACA44;
+  border-radius: 4px;
+}
+
+/* Active nav link styling */
+#nav-links a.activeNav {
+  background-color: #BACA44;
+  border-radius: 4px;
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Hamburger bar styling */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Header section styling */
+header {
+  width: 100%;
+  height: 30vh;
+  color: #BACA44;
+  background-color: rgb(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main content area styling */
+main {
+  background-color: #EEEED2;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: start;
+}
+
+/* Container for iframe section */
+.iframe-section {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50%;
+  border-radius: 8px;
+}
+
+/* Responsive styling for iframe */
+.iframe-section iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Content section container */
+.content-section {
+  border-left: 1px solid #BACA44;
+  border-right: 1px solid #BACA44;
+  padding: 20px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+  overflow-y: auto;
+}
+
+/* Header styling in content section */
+.content-section h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #BACA44;
+  padding-bottom: 5px;
+  margin-top: 45px;
+}
+
+/* Paragraph styling in content section */
+.content-section p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Figure container styling */
+.content-section figure {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Image styling in content section */
+.content-section img {
+  border: 1px solid black;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Caption styling for figures */
+.content-section figcaption {
+  font-size: 0.7rem;
+  margin-top: 8px;
+}
+
+/* References section styling */
+.references-section {
+  padding: 10px 10px;
+  margin: 0 auto;
+  margin-top: 30%;
+  background-color: #769656;
+  border: 1px solid #BACA44;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  max-width: 300px;
+}
+
+/* Header styling in references section */
+.references-section h2 {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #BACA44;
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+
+/* Link styling in references section */
+.references-section a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/* Hover styling for links in references section */
+.references-section a:hover {
+  color: #BACA44;
+  text-decoration: underline;
+}
+
+/* Footer container styling */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(0,0,0,0.75);
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Paragraph styling in footer */
+.footer p {
+  margin: 5px 0;
+}
+
+/* Footer links container */
+.footer-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Footer link styling */
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+  color: #BACA44;
+}
+
+/* Responsive layout for screens 1228px or narrower */
+@media (max-width: 1228px) {
+  .grid-container {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+  }
+
+  .content-section {
+      border-top: 1px solid #BACA44;
+      border-bottom: 1px solid #BACA44;
+      order: 2;
+  }
+  .iframe-section {
+      order: 1;
+  }
+  .references-section {
+      order: 3;
+  }
+
+  .iframe-section, .content-section, .references-section {
+      max-width: 800px;
+      margin: 10px auto;
+      padding: 10px 20px;
+  }
+}
+
+/* Responsive styling for screens 820px or narrower */
+@media (max-width: 820px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  .content-section h2, .references-section h2 {
+      font-size: 1.5rem;
+  }
+
+  .content-section p, .references-section {
+      font-size: 0.9rem;
+  }
+
+  nav ul li a {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+
+  main {
+      padding: 10px;
+  }
+
+  .iframe-section, .content-section, .references-section {
+      max-width: 90%;
+      padding: 8px 15px;
+      margin: 8px auto;
+  }
+
+  .footer p, .footer-links a {
+      font-size: 0.8rem;
+  }
+
+  .content-section img {
+      width: 100%;
+      max-width: 300px;
+  }
+}
+
+/* Responsive styling for screens 650px or narrower */
+@media (max-width: 650px) {
+  #nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #769656;
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 200px;
+      border-radius: 5px;
+      padding: 10px 0;
+  }
+
+  #nav-links li {
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+  }
+
+  #nav-links li:first-child {
+      margin-right: 0;
+  }
+
+  #nav-links li a {
+      display: block;
+      color: white;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  #nav-links.show {
+      display: flex;
+      width: 100%;
+      text-align: center;
+  }
+}

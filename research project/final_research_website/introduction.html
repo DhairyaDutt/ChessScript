@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessCrypt</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+    <body>
+
+        
+
+        <nav id="navbar">
+
+            <div class="hamburger" onclick="toggleMenu()"> <!-- Hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="index.html">ChessCrypt</a></li>
+                <li><a href="">Introduction</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="methodology.html">Methodology</a></li>
+                <li><a href="applicationConclusion.html">Conclusion</a></li>
+
+            </ul>
+            
+        </nav>
+
+        <!-- Header with title of the page -->
+        <header><h1>INTRODUCTION</h1></header>
+
+        <!-- Main content section laid out with a grid -->
+        <main class="grid-container">
+            <div class="iframe-section">
+
+                 <!-- Embedded YouTube video section -->
+                <iframe  src="https://www.youtube.com/embed/ej_fnsdsksA?autoplay=1&mute=1" title="YouTube video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+
+
+            <!-- Content section with text and images -->
+            <div class="content-section">
+                <h2>About</h2>
+                <p>The use of games as a cover medium for steganography
+                    techniques has grown in popularity recently. Several research
+                    have used games as a cover medium to hide information [2].
+                    Gaming is a popular source of entertainment. People of all
+                    ages enjoy this. Chess is among the most Popular board
+                    games around the world. Serving as a simulation of a Battle
+                    between two kingdoms, chess grabs the brains of two. Players
+                    engaged in a strategic combat on a checkered gameboard.
+                    Known as a chessboard. The chessboard contains 64
+                    squares. structured in an 8 × 8 grid and requires the usage of
+                    six unique Each player has 16 moving pieces. Each piece has
+                    a unique set of rules and movements [3].
+                </p>
+                
+                <figure>
+                    <picture>
+                        <!-- Preferred Image source -->
+                        <source srcset="assets/images/standardboard.webp" type="image/webp">
+                        
+                        <!-- Fallback image -->
+                        <source srcset="assets/images/standardBoard.png" type="image/png">
+                        
+                        <!-- Default image (for browsers that do not support <picture> at all) -->
+                        <img src="assets/images/standardboard.webp" alt="Chess Board" style="width:40%">
+                    </picture>
+                    <figcaption>Fig.1 Chess Board [3]</figcaption>
+                </figure>
+
+                <p>This approach of steganography involves embedding data
+                    throughout chess games to hide the true content. Data can be
+                    encoded in a chess game by assigning binary values to each
+                    move. A sequence of games, rather than a single match,
+                    might represent more and more complicated facts. This work
+                    presents a method for encoding and reconstructing whole
+                    files, including graphics and text, using chess games. The
+                    research examines how this technology can provide secure,
+                    low-bandwidth communication. Emphasizing the encryption of
+                    secret messages. This method requires translating binary data
+                    into a format that allows legal chess moves. It gives an
+                    innovative technique for hiding information in plain sight,
+                    making it helpful.
+                </p>
+
+                <h2>What is steganography</h2>
+                <p>To put it simply, steganography is the art and method of hiding
+                    data. It can be done both physically and digitally, using
+                    techniques ranging from Morse code blinking to data hidiing
+                    in.mp3 files. [1]
+                </p>
+                <p>Combining steganography and encryption can provide an
+                    additional degree of security by hiding the message's
+                    existence and scrambling its contents even if detected. This
+                    technology is utilized in a variety of sectors, including digital
+                    watermarking (to protect intellectual property) and covert
+                    communication in cyber espionage.
+                </p>
+                <h2>Steganography vs Cryptography</h2>
+                <p>Steganography aims to conceal the presence of information,
+                    whereas cryptography aims to prevent access to that
+                    information. When steganography is used correctly, no one,
+                    save the intended recipients, should be able to detect any
+                    secret communication taking place. This makes it an effective
+                    method in situations where obvious contact is dangerous. In
+                    contrast, cryptography is typically utilized in cases where the
+                    participants are unconcerned about anyone discovering that
+                    they are communicating, but the communication itself must be
+                    disguised and inaccessible to third parties. [1]
+                </p>
+                <p>Let's look at some examples to better grasp the differences. If
+                    you are a political activist who has been imprisoned and
+                    needs to communicate with your organization, logistics can be
+                    difficult. The authorities may monitor everything that enters
+                    and exits your cell, so you will most likely have to mask any
+                    communication that occurs. Steganography would be an
+                    appropriate solution in this case. It may be difficult given your
+                    resources, but you may write a plain-sounding letter with a
+                    hidden message concealed using several font kinds or other
+                    steganography techniques.
+                </p>
+                <p>Another example would be, Diplomats are expected to
+                    communicate with officials from their home country in order to
+                    avoid suspicion. However, because the conversation's
+                    substance is top secret, the diplomat may choose to use
+                    cryptography and communicate over an encrypted line. If
+                    spies or attackers attempt to intercept the communication,
+                    they will only have access to the ciphertext, not what the two
+                    parties are saying.
+                </p>
+                
+            </div>
+
+
+
+            <!-- References section -->
+            <div class="references-section">
+                <h2>References</h2>
+                <a href="https://www.comparitech.com/blog/information-security/what-is-steganography/#The_history_of_steganography" target="_blank">
+                    [1] Lake, J. (2023, December 29). What is steganography and how does it differ from cryptography?. Comparitech.
+                </a>
+
+                <a href="https://doi.org/10.21203/rs.3.rs-5088828/v1" target="_blank">
+                    [2] Md Shaheer Ahmed, P MaryAnkitha, P U Anitha et al. Chess Games as a Method for File Encryption and Storage, 17 September 2024, PREPRINT (Version 1) available at Research Square
+                </a>
+
+                <a href="https://www.chess.com/terms/chess" target="_blank">
+                    [3] “Chess: Everything You Need to Know - Chess.com.” [Online].
+                </a>
+
+            </div>
+
+        </main>
+
+
+
+        <!-- Footer with contact links -->
+        <footer class="footer">
+            <p>&copy; 2024 Dhairya Dutt</p>
+            <div class="footer-links">
+              <a href="https://www.linkedin.com/in/dhairya-dutt/" target="_blank">LinkedIn</a>
+              <a href="mailto:dd8053@g.rit.edu">Email</a>
+              <a href="https://github.com/DhairyaDutt" target="_blank">GitHub</a>
+              <a href="../index.html" target="_blank">Homepage</a>
+            </div>
+        </footer>
+
+        
+        <!-- External JavaScript files -->
+        <script src="assets/scripts/scrollEffect.js"></script>
+        <script src="assets/scripts/hamburger.js"></script>
+        <script src="assets/scripts/activeNav.js"></script>
+
+    </body>
+</html>

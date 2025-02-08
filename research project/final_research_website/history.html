@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessCrypt</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+    <body>
+
+        
+
+        <nav id="navbar">
+
+            <div class="hamburger" onclick="toggleMenu()"> <!-- Hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="index.html">ChessCrypt</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="methodology.html">Methodology</a></li>
+                <li><a href="applicationConclusion.html">Conclusion</a></li>
+            </ul>
+            
+        </nav>
+
+        <header><h1>HISTORY</h1></header>
+
+        <main class="grid-container">
+            <div class="iframe-section">
+                <!-- <iframe width="100%"  src="https://www.youtube.com/embed/ej_fnsdsksA?autoplay=1&mute=1" title="YouTube video"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe> -->
+            </div>
+
+
+
+            <div class="content-section">
+                <h2>History of Steganography</h2>
+                <p>Herodotus' Histories contains the first known textual example
+                    of steganography. He claims that it occurred during the Ionian
+                    Revolt, a rebellion of certain Greek cities against Persian
+                    control in roughly 500 BC. Histiaeus, the ruler of Miletus, was
+                    away from his city serving as an adviser to the Persian
+                    monarch. He intended to return to Miletus, which was
+                    controlled by his son-in-law, Aristagoras, so he plotted an
+                    uprising in Ionia as a pretext for his homecoming. This is
+                    where steganography comes in. He shaved a slave's head
+                    and tattooed a statement on his scalp. [1]
+                </p>
+
+                <p>Histiaeus then waited for the slave's hair to grow back, hiding
+                    the message, before sending him to Aristagoras with
+                    instructions to shave the slave's head again and read the
+                    letter. The hidden writing instructed him to rise up against
+                    Persian rule, igniting the revolt against their invaders.
+                    Herodotus recounts another incident with steganography that
+                    occurred several years later, when Spartan king Demaratus
+                    returned a supposedly blank wax tablet to Sparta. A message
+                    was hidden inside the wax, warning the Spartans about
+                    Xerxes' impending assault. Herodotus is infamous for his wild
+                    tales, so we can't be certain how true these stories are, but
+                    they are the oldest recordings of steganography we have.
+                </p>
+                
+                <figure>
+                    <picture>
+                        <!-- Source for modern browsers supporting WebP -->
+                        <source srcset="assets/images/null.webp" type="image/webp">
+                        
+                        <!-- Fallback image for browsers that don't support WebP -->
+                        <source srcset="assets/images/null.jpg" type="image/jpg">
+                        
+                        <!-- Default image (for browsers that do not support <picture> at all) -->
+                        <img src="assets/images/null.jpg" alt="Null Cipher" style="width:60%">
+                    </picture>
+                    <figcaption>Fig.1 Null Cipher [1]</figcaption>
+                </figure>
+
+                <p>It wasn't long before more advanced types of steganography
+                    were discovered. In the fourth century BC, Aeneas Tacticus
+                    mentioned a hole punching technique. Philo of Byzantium was
+                    the first to write about invisible inks, in the third century BC.
+                    His recipe involved writing text with gall nuts and revealing it
+                    with a copper sulfate solution. Johannes Trithemius coined the
+                    term "steganography" in his book Steganographia. The name
+                    is a combination of the Greek words steganos (concealed)
+                    and graphein (writing). Steganographia was a brilliant book
+                    that claimed to be about magic and the occult but concealed
+                    its true subject matter, which was concentrated on
+                    cryptography and steganography.[1]                                      
+                </p>
+
+                <p>Steganographia was followed by Polygraphia, which appeared
+                    after Trithemius' death in 1518. This was a more
+                    straightforward book on steganography and its use. Another
+                    significant advancement in steganography occurred in 1605,
+                    when Francis Bacon created Bacon's cipher. This method
+                    employed two distinct typefaces to encode a secret message
+                    into seemingly benign text. Microdots were first invented in the
+                    second half of the nineteenth century, although they were not
+                    widely utilized for steganography until World War I. They
+                    include reducing a message or image to the size of a dot,
+                    allowing people to communicate and share information without
+                    their adversaries knowing.
+                </p>
+
+                <figure>
+
+                    <picture>
+                        <!-- Source for modern browsers supporting WebP -->
+                        <source srcset="assets/images/baconian.webp" type="image/webp">
+                        
+                        <!-- Fallback image for browsers that don't support WebP -->
+                        <source srcset="assets/images/baconian.jpg" type="image/jpg">
+                        
+                        <!-- Default image (for browsers that do not support <picture> at all) -->
+                        <img src="assets/images/baconian.webp" alt="Null Cipher" style="width:70%">
+                    </picture>
+
+                    <figcaption>Fig.2 Baconian Cipher [1]</figcaption>
+                </figure>
+
+                <p>There have been numerous other steganographic
+                    developments and approaches over the years. Steganography
+                    is still practiced today, with low-tech variants commonly
+                    utilized by prison gangs and digital methods used to hide data
+                    in images, sound files, and other media.
+                </p>
+
+
+
+                <h2>History of related work</h2>
+                <p>Dey et al. [3] suggested an image steganographic approach
+                    using the sudoku puzzle. The suggested approach uses an
+                    8x8 sudoku matrix as a key to encrypt and decrypt the secret
+                    message. The proposed approach converts the secret
+                    message's ASCII value to base-8 numbers, which are then
+                    saved in an array. Each sudoku cell's value is translated to
+                    binary and represented by the least significant bit of the blue
+                    component of each set of 9 pixels in the cover image.
+                </p>
+                <p>In 2021, Bansal et al. [2] proposed a steganographic
+                    technique inspired by the rook chess piece. The process
+                    divides the cover image into n×1 pixel blocks, which are
+                    equivalent to 64 bits, similar to chessboard squares. Each
+                    block represents black and white rook pieces, with bit values
+                    of 0 and 1, respectively. The hidden message is incorporated
+                    in the cover image depending on the functional output of each
+                    block, which is computed by taking into account the number of
+                    rook positions under attack from opponents.
+                </p>
+                <p>Hussien et al. [2] suggested a coverless picture
+                    steganography method using jigsaw puzzle image generating.
+                    The proposed method breaks an image into blocks and
+                    produces a jigsaw puzzle stego-picture using secret message
+                    bits and a mapping function. To extract the payload,
+                    reassemble the puzzle. Our suggested method outperforms
+                    existing coverless image steganography algorithms in terms of
+                    hiding capacity, security, and resilience.
+                </p>
+                <p>However, none of the three chess-steganography approaches
+                    stated use an image of a chessboard to conceal a hidden
+                    message.
+                </p>
+                
+            </div>
+
+
+
+
+            <div class="references-section">
+                <h2>References</h2>
+                <a href="https://www.comparitech.com/blog/information-security/what-is-steganography/#The_history_of_steganography" target="_blank">
+                    [1] Lake, J. (2023, December 29). What is steganography and how does it differ from cryptography?. Comparitech.
+                </a>
+
+                <a href="https://www.researchgate.net/publication/337518559_A_Review_on_Game_based_Steganography" target="_blank">
+                    [2] Shalu and Y. Sharma, “A Review on Game based Steganography,” in 2019 International Conference on Intelligent Sustainable Systems (ICISS). Palladam, Tamilnadu, India: IEEE, Feb. 2019, pp. 286–290.
+                </a>
+
+                <a href="https://www.chess.com/terms/chess" target="_blank">
+                    [3] “Chess: Everything You Need to Know - Chess.com.” [Online].
+                </a>
+
+            </div>
+
+        </main>
+
+
+
+
+        <footer class="footer">
+            <p>&copy; 2024 Dhairya Dutt</p>
+            <div class="footer-links">
+              <a href="https://www.linkedin.com/in/dhairya-dutt/" target="_blank">LinkedIn</a>
+              <a href="mailto:dd8053@g.rit.edu">Email</a>
+              <a href="https://github.com/DhairyaDutt" target="_blank">GitHub</a>
+              <a href="../index.html" target="_blank">Homepage</a>
+            </div>
+        </footer>
+
+        
+
+        <script src="assets/scripts/scrollEffect.js"></script>
+        <script src="assets/scripts/hamburger.js"></script>
+        <script src="assets/scripts/activeNav.js"></script>
+
+    </body>
+</html>

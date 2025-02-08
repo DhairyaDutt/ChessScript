@@ -1,0 +1,173 @@
+/* Resetting default margin and padding, setting box-sizing to border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main body styling with background image setup */
+body {
+  height: 100vh;
+  background-image: url('../images/homepageBackgroundImg.jpg'); 
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  background-attachment: fixed;   
+}
+
+/* Overlay effect with semi-transparent dark overlay */
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: -1; 
+}
+
+/* Centered header on the page */
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Styling for the header title */
+header h1 {
+  font-size: 3em;
+  color: #BACA44; 
+}
+
+/* Styling for header paragraph */
+header p {
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Navbar styling with transparent background by default */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s ease; 
+  z-index: 10;
+}
+
+/* Changes navbar color on scroll */
+#navbar.scrolled {
+  background-color: #769656; 
+}
+
+/* General styling for lists */
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling each list item in navbar */
+ul li {
+  display: inline;
+  font-weight: 500;
+}
+
+/* Styling for the first link (ChessCrypt) to align it to the left */
+#nav-links li:first-child {
+  margin-right: auto;
+}
+
+/* Styling for navbar links */
+ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Hover and active state styling for navbar links */
+ul li a:hover, ul li a.active {
+  background-color: #BACA44; 
+  border-radius: 4px;
+}
+
+/* Active state styling for current navbar link */
+#nav-links a.activeNav {
+  background-color: #BACA44;
+  border-radius: 4px;
+}
+
+/* Hamburger menu styling, hidden by default */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Each line in the hamburger icon */
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Responsive navbar styling for screens 820px or smaller */
+@media (max-width: 820px) {
+  /* Adjust padding and font size for links */
+  nav ul li a {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Responsive styling for screens 650px or smaller */
+@media (max-width: 650px) {
+  /* Hide nav links by default */
+  #nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #769656; 
+      position: absolute;
+      top: 35px;
+      right: 0;
+      width: 200px;
+      border-radius: 5px;
+      padding: 10px 0;
+  }
+
+  /* Center align list items in dropdown */
+  #nav-links li {
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+  }
+
+  /* Remove margin for first link */
+  #nav-links li:first-child {
+      margin-right: 0;
+  }
+
+  /* Display each link as a block */
+  #nav-links li a {
+      display: block;
+      color: white;
+  }
+
+  /* Show hamburger icon on small screens */
+  .hamburger {
+      display: flex;
+  }
+
+  /* Show dropdown menu when hamburger is clicked */
+  #nav-links.show {
+      display: flex;
+      width: 100%;
+      text-align: center;
+  }
+}

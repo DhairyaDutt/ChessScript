@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessCrypt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+    <body>
+
+        
+
+        <nav id="navbar">
+
+            <div class="hamburger" onclick="toggleMenu()"> <!-- Hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="index.html">ChessCrypt</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="">Methodology</a></li>
+                <li><a href="applicationConclusion.html">Conclusion</a></li>
+            </ul>
+            
+        </nav>
+
+        <header><h1>METHODOLOGY</h1></header>
+
+        <main class="grid-container">
+            <div class="iframe-section">
+                <!-- <iframe width="100%"  src="https://www.youtube.com/embed/ej_fnsdsksA?autoplay=1&mute=1" title="YouTube video"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe> -->
+            </div>
+
+
+
+            <div class="content-section">
+                <h2>Method 1: Chess-Based Encryption System</h2>
+                <p>The suggested chess-based encryption system consists of
+                    two main components: an encoder and decoder. The encoder
+                    translates binary data to chess moves and generates a
+                    Portable Game Notation (PGN) file with one or more full
+                    games. The process maps binary chunks to legal chess
+                    moves, with the size of each chunk based on the number of
+                    potential movements in the current board position. The
+                    technique uses the intricacy and unpredictability of chess
+                    games to conceal encrypted information, similar to
+                    steganography. [1]
+                </p>
+
+                
+                
+                <figure>
+                    <img src="assets/images/method11.jpg" alt="1 bit per move" style="width:50%">
+                    <figcaption>Fig.1 PNG method with 1 bit per move [1]</figcaption>
+                </figure>
+
+
+                <figure>
+                    
+                    <img src="assets/images/method12.jpg" alt="3 bits per move" style="width:50%">
+                    <figcaption>Fig.2 PNG method with 3 bits per move [1]</figcaption>
+                </figure>
+
+                <p>On the receiving end, the decoder reverses the procedure.
+                    The program reads the PGN file, reconstructs the chess
+                    games, and turns each move into a binary chunk. The binary
+                    chunks are concatenated and written to an output file to
+                    reassemble the original data. The system's security is based
+                    on the large number of possible chess games and the
+                    challenge of discriminating between moves for data encoding
+                    and actual gameplay. This technology provides a secure data
+                    transmission method that is ideal for situations when typical
+                    encryption methods may cause unwanted attention.                                                       
+                </p>
+
+                <p>Steganographia was followed by Polygraphia, which appeared
+                    after Trithemius' death in 1518. This was a more
+                    straightforward book on steganography and its use. Another
+                    significant advancement in steganography occurred in 1605,
+                    when Francis Bacon created Bacon's cipher. This method
+                    employed two distinct typefaces to encode a secret message
+                    into seemingly benign text. Microdots were first invented in the
+                    second half of the nineteenth century, although they were not
+                    widely utilized for steganography until World War I. They
+                    include reducing a message or image to the size of a dot,
+                    allowing people to communicate and share information without
+                    their adversaries knowing.
+                </p>
+
+                <h2>Method 2: Chess-Based Steganography</h2>
+
+                <p>The proposed method for data hiding in chessboard games
+                    cleverly incorporates hidden message embedding into the
+                    chess framework. Initially, the secret message is compressed
+                    by Huffman coding, which optimizes data by assigning shorter
+                    binary codes to frequently occurring parts. The message is
+                    separated into two sections: the first 24 bits are embedded
+                    through pawn placements according to a specified mapping,
+                    and the following 16 bits are encoded based on the number of
+                    pieces on the chessboard's columns and rows using special
+                    binary representation rules.[2]
+                </p>
+
+                <figure>
+                    <img src="assets/images/method2.jpg" alt="flowchart" style="width:90%; height: auto;">
+                    <figcaption>Fig.3 Flowchart for Method 2 [2]</figcaption>
+                </figure>
+
+                <p>Validation requirements are followed to ensure that the chess
+                    setup remains legitimate following the embedding process.
+                    Furthermore, the method uses the Least Significant Bit (LSB)
+                    methodology to embed the Huffman tree in the chessboard
+                    image, dispersing bits across different squares to reduce
+                    visible artifacts. Reconstructing the chessboard, reading the
+                    encoded messages, and decoding with the stored Huffman
+                    tree are all part of the data extraction process.                    
+                </p>
+
+                <p>This revolutionary concept not only displays a novel use of
+                    steganography, but it also combines cryptographic principles
+                    with games strategy to provide safe communication, allowing
+                    up to 40 bits of secret information to be hidden within an
+                    otherwise normal chess game. This strategy improves the field
+                    of secure communications by preserving the chessboard's
+                    integrity while concealing critical data.
+                </p>
+
+
+
+                
+                 
+                    
+                
+            </div>
+
+
+
+
+            <div class="references-section">
+                <h2>References</h2>
+                <a href="https://doi.org/10.21203/rs.3.rs-5088828/v1" target="_blank">
+                    [1] Md Shaheer Ahmed, P MaryAnkitha, P U Anitha et al. Chess Games as a Method for File Encryption and Storage, 17 September 2024, PREPRINT (Version 1) available at Research Square
+                </a>
+
+                <a href="https://scholar.its.ac.id/en/publications/enigma-on-the-board-chess-based-steganography-for-secure-communic" target="_blank">
+                    [2] I. K. Agus Ariesta Putra and T. Ahmad, "Enigma on the Board: Chess-Based Steganography for Secure Communication," 2024 International Conference on Green Energy, Computing and Sustainable Technology (GECOST), Miri Sarawak, Malaysia, 2024, pp. 287-292, doi: 10.1109/GECOST60902.2024.10474684.
+                </a>
+
+                
+
+            </div>
+
+        </main>
+
+
+
+
+        <footer class="footer">
+            <p>&copy; 2024 Dhairya Dutt</p>
+            <div class="footer-links">
+              <a href="https://www.linkedin.com/in/dhairya-dutt/" target="_blank">LinkedIn</a>
+              <a href="mailto:dd8053@g.rit.edu">Email</a>
+              <a href="https://github.com/DhairyaDutt" target="_blank">GitHub</a>
+              <a href="../index.html" target="_blank">Homepage</a>
+            </div>
+        </footer>
+
+        
+
+        <script src="assets/scripts/scrollEffect.js"></script>
+        <script src="assets/scripts/hamburger.js"></script>
+        <script src="assets/scripts/activeNav.js"></script>
+
+    </body>
+</html>
